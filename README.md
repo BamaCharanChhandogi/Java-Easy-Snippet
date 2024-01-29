@@ -1,65 +1,36 @@
-# java README
+# Java Code Snippets for Visual Studio Code
 
-This is the README for your extension "java". After writing up a brief description, we recommend including the following sections.
+This Visual Studio Code extension provides a collection of Java code snippets to enhance your coding productivity. The snippets cover common scenarios in Java development, including basic class structure, input handling with Scanner, and usage of various data structures like ArrayList, HashMap, LinkedList, Queue, Stack, Set, TreeMap, and PriorityQueue.
 
-## Features
+## Installation
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+1. Open Visual Studio Code.
+2. Go to Extensions (you can use the shortcut `Ctrl + Shift + X`).
+3. Search for "Java Code Snippets" and install the extension.
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage
 
-\!\[feature X\]\(images/feature-x.png\)
+To use a snippet, type its prefix in a Java file and press `Tab` to expand the snippet.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Available Snippets
 
-## Requirements
+- **Java Template**: Basic Java class template.
+- **Java Scanner Template**: Template with a Scanner for user input.
+- **Java ArrayList Template**: Template with an ArrayList.
+- **Java HashMap Template**: Template with a HashMap.
+- **Java LinkedList Template**: Template with a LinkedList.
+- **Java Queue Template**: Template with a Queue (using LinkedList).
+- **Java Stack Template**: Template with a Stack.
+- **Java Set Template**: Template with a HashSet.
+- **Java TreeMap Template**: Template with a TreeMap.
+- **Java PriorityQueue Template**: Template with a PriorityQueue.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Feel free to customize the templates to suit your preferences and coding style.
 
-## Extension Settings
+## Contribution
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+If you have additional Java code snippets that you find useful, feel free to contribute by submitting a pull request on [GitHub](https://github.com/yourusername/your-repo).
 
-For example:
+## License
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is licensed under the [MIT License](LICENSE).

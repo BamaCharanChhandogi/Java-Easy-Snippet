@@ -4,9 +4,10 @@
   "description": "This is java code snippets",
   "version": "1.0.0",
   "publisher": "BamaCharanChhandogi",
+  "icon": "images/logo.png",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/BamaCharanChhandogi/Java-Snippets"
   },
   "keywords": [
     "java",

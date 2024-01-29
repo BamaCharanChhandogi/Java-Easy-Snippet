@@ -1,0 +1,151 @@
+{
+    // Java basic template
+    "Java Template": {
+      "prefix": "java",
+      "body": [
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a basic Java class with the main method."
+    },
+  
+    // Java Scanner template
+    "Java Scanner Template": {
+      "prefix": "jscan",
+      "body": [
+        "import java.util.Scanner;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        Scanner scanner = new Scanner(System.in);",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a Scanner object for user input."
+    },
+  
+    // Java ArrayList template
+    "Java ArrayList Template": {
+      "prefix": "jarraylist",
+      "body": [
+        "import java.util.ArrayList;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        ArrayList<Integer> list = new ArrayList<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with an ArrayList."
+    },
+  
+    // Java HashMap template
+    "Java HashMap Template": {
+      "prefix": "jhashmap",
+      "body": [
+        "import java.util.HashMap;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        HashMap<String, Integer> map = new HashMap<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a HashMap."
+    },
+  
+    // Java LinkedList template
+    "Java LinkedList Template": {
+      "prefix": "jlinkedlist",
+      "body": [
+        "import java.util.LinkedList;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        LinkedList<Integer> list = new LinkedList<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a LinkedList."
+    },
+  
+    // Java Queue template
+    "Java Queue Template": {
+      "prefix": "jqueue",
+      "body": [
+        "import java.util.Queue;",
+        "import java.util.LinkedList;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        Queue<Integer> queue = new LinkedList<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a Queue (using LinkedList)."
+    },
+  
+    // Java Stack template
+    "Java Stack Template": {
+      "prefix": "jstack",
+      "body": [
+        "import java.util.Stack;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        Stack<Integer> stack = new Stack<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a Stack."
+    },
+  
+    // Java Set template
+    "Java Set Template": {
+      "prefix": "jset",
+      "body": [
+        "import java.util.HashSet;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        HashSet<Integer> set = new HashSet<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a HashSet."
+    },
+  
+    // Java TreeMap template
+    "Java TreeMap Template": {
+      "prefix": "jtreemap",
+      "body": [
+        "import java.util.TreeMap;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        TreeMap<String, Integer> map = new TreeMap<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a TreeMap."
+    },
+  
+    // Java PriorityQueue template
+    "Java PriorityQueue Template": {
+      "prefix": "jpqueue",
+      "body": [
+        "import java.util.PriorityQueue;",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        PriorityQueue<Integer> pq = new PriorityQueue<>();",
+        "        $0",
+        "    }",
+        "}"
+      ],
+      "description": "Creates a Java class with a PriorityQueue."
+    }
+  }
+  

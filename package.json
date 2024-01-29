@@ -1,0 +1,30 @@
+{
+  "name": "java",
+  "displayName": "JavaSnippet",
+  "description": "This is java code snippets",
+  "version": "1.0.0",
+  "publisher": "BamaCharanChhandogi",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "java",
+    "snippet",
+    "code"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "java",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

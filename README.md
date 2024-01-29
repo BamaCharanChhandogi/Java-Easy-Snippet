@@ -90,7 +90,7 @@ public class Main {
 }
 ```
 ### 5. jlinkedlist = Java Class with LinkedList
-```jaba
+```java
 import java.util.LinkedList;
 
 public class Main {

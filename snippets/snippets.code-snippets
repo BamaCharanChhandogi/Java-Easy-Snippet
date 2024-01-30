@@ -147,4 +147,191 @@
     ],
     "description": "Creates a Java class with a PriorityQueue."
   }
+  // Java HashSet template
+  "Java HashSet Template": {
+    "prefix": "jhashset",
+    "body": [
+      "import java.util.HashSet;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        HashSet<Integer> set = new HashSet<>();",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a HashSet."
+  },
+
+  // Java TreeSet template
+  "Java TreeSet Template": {
+    "prefix": "jtreeset",
+    "body": [
+      "import java.util.TreeSet;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        TreeSet<Integer> set = new TreeSet<>();",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a TreeSet."
+  },
+
+  // Java LinkedHashSet template
+  "Java LinkedHashSet Template": {
+    "prefix": "jlinkedhashset",
+    "body": [
+      "import java.util.LinkedHashSet;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        LinkedHashSet<Integer> set = new LinkedHashSet<>();",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a LinkedHashSet."
+  },
+
+  // Iteration methods
+
+  // Java ArrayList iteration template
+  "Java ArrayList Iteration Template": {
+    "prefix": "jarraylistiter",
+    "body": [
+      "import java.util.ArrayList;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        ArrayList<Integer> list = new ArrayList<>();",
+      "        for (int element : list) {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with an ArrayList iteration."
+  },
+
+  // Java HashMap iteration template
+  "Java HashMap Iteration Template": {
+    "prefix": "jhashmapiter",
+    "body": [
+      "import java.util.HashMap;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        HashMap<String, Integer> map = new HashMap<>();",
+      "        for (Map.Entry<String, Integer> entry : map.entrySet()) {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a HashMap iteration."
+  },
+
+  // Java LinkedList iteration template
+  "Java LinkedList Iteration Template": {
+    "prefix": "jlinkedlistiter",
+    "body": [
+      "import java.util.LinkedList;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        LinkedList<Integer> list = new LinkedList<>();",
+      "        for (int element : list) {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a LinkedList iteration."
+  },
+
+  // Java Queue iteration template
+  "Java Queue Iteration Template": {
+    "prefix": "jqueueiter",
+    "body": [
+      "import java.util.Queue;",
+      "import java.util.LinkedList;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        Queue<Integer> queue = new LinkedList<>();",
+      "        while (!queue.isEmpty()) {",
+      "            int element = queue.poll();",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a Queue iteration."
+  },
+
+  // Java Stack iteration template
+  "Java Stack Iteration Template": {
+    "prefix": "jstackiter",
+    "body": [
+      "import java.util.Stack;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        Stack<Integer> stack = new Stack<>();",
+      "        while (!stack.isEmpty()) {",
+      "            int element = stack.pop();",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a Stack iteration."
+  },
+
+  // Java Set iteration template
+  "Java Set Iteration Template": {
+    "prefix": "jsetiter",
+    "body": [
+      "import java.util.Set;",
+      "import java.util.HashSet;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        Set<Integer> set = new HashSet<>();",
+      "        for (int element : set) {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a Set iteration."
+  },
+
+  // Java TreeMap iteration template
+  "Java TreeMap Iteration Template": {
+    "prefix": "jtreemapiter",
+    "body": [
+      "import java.util.TreeMap;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        TreeMap<String, Integer> map = new TreeMap<>();",
+      "        for (Map.Entry<String, Integer> entry : map.entrySet()) {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a TreeMap iteration."
+  },
+
+  // Java PriorityQueue iteration template
+  "Java PriorityQueue Iteration Template": {
+    "prefix": "jpqueueiter",
+    "body": [
+      "import java.util.PriorityQueue;",
+      "public class ${TM_FILENAME_BASE} {",
+      "    public static void main(String[] args) {",
+      "        PriorityQueue<Integer> pq = new PriorityQueue<>();",
+      "        while (!pq.isEmpty()) {",
+      "            int element = pq.poll();",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "Creates a Java class with a PriorityQueue iteration."
+  }
 }

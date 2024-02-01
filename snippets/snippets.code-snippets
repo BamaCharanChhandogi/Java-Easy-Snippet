@@ -4,6 +4,7 @@
     "prefix": "java",
     "body": [
       "import java.util.*;",
+
       "public class ${TM_FILENAME_BASE} {",
       "    public static void main(String[] args) {",
       "        $0",
@@ -399,6 +400,14 @@
   /*----------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------------------*/
 
+  // Java Output template
+  "Java Output Template": {
+    "prefix": "jout",
+    "body": [
+      "System.out.println($0);",
+    ],
+    "description": "Creates a Java output code"
+  },
 // Output Array 
   "Java ArrayList Output": {
     "prefix": "joutarray",

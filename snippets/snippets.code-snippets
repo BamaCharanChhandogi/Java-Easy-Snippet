@@ -135,33 +135,43 @@
   "Java Scanner Integer Array using for loop": {
     "prefix": "jscanintarray",
     "body": [
-      "int[] ${1:variable} = new int[scanner.nextInt()];",
-      "for (int i = 0; i < ${1:variable}.length; i++) {",
-      "    ${1:variable}[i] = scanner.nextInt();",
+      "Scanner scanner = new Scanner(System.in);",
+      "int[] ${1:arr} = new int[scanner.nextInt()];",
+      "",
+      "for (int i = 0; i < ${1:arr}.length; i++) {",
+      "    ${1:arr}[i] = scanner.nextInt();",
       "}",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Integer Array"
   },
   // Java Scanner String Array
-  "Java Scanner String Array ": {
-    "prefix": "jscansarray",
+  "Java Scanner String Array": {
+    "prefix": "jscanstrarray",
     "body": [
-      "String[] ${1:variable} = new String[scanner.nextInt()];",
-      "for (int i = 0; i < ${1:variable}.length; i++) {",
-      "    ${1:variable}[i] = scanner.nextLine();",
+      "Scanner scanner = new Scanner(System.in);",
+      "int n = scanner.nextInt();",
+      "scanner.nextLine(); // Consume the newline character",
+      "",
+      "String[] ${1:arr} = new String[n];",
+      "for (int i = 0; i < ${1:arr}.length; i++) {",
+      "    ${1:arr}[i] = scanner.nextLine();",
       "}",
-      "$0",
+      "$0"
     ],
-    "description": "Creates a Java class with a Scanner object for user input String Array "
-  },
+    "description": "Creates a Java class with a Scanner object for user input String Array"
+  }
+  
   // java Scanner Integer ArrayList
   "Java Scanner Integer ArrayList": {
     "prefix": "jscanintarraylist",
     "body": [
-      "ArrayList<Integer> ${1:variable} = new ArrayList<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
+      "Scanner scanner = new Scanner(System.in);",
+      "int n = scanner.nextInt();",
+      "",
+      "ArrayList<Integer> ${1:list} = new ArrayList<>();",
+      "for (int i = 0; i < n; i++) {",
+      "    ${1:list}.add(scanner.nextInt());",
       "}",
       "$0",
     ],
@@ -171,231 +181,313 @@
   "Java Scanner String ArrayList": {
     "prefix": "jscanstrarraylist",
     "body": [
-      "ArrayList<String> ${1:variable} = new ArrayList<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
+      "Scanner scanner = new Scanner(System.in);",
+      "int n = scanner.nextInt();",
+      "scanner.nextLine(); // Consume the newline character",
+      "",
+      "ArrayList<String> ${1:list} = new ArrayList<>();",
+      "for (int i = 0; i < n; i++) {",
+      "    ${1:list}.add(scanner.nextLine());",
       "}",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input String ArrayList"
   },
-  // java Scanner Integer LinkedList
+  // Java Scanner Integer LinkedList
   "Java Scanner Integer LinkedList": {
-    "prefix": "jscanintlinkedlist",
-    "body": [
-      "LinkedList<Integer> ${1:variable} = new LinkedList<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer LinkedList"
-  },
-  // java Scanner String LinkedList
-  "Java Scanner String LinkedList": {
-    "prefix": "jscanstrlinkedlist",
-    "body": [
-      "LinkedList<String> ${1:variable} = new LinkedList<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String LinkedList"
-  },
-  // java Scanner Integer Queue
-  "Java Scanner Integer Queue": {
-    "prefix": "jscanintqueue",
-    "body": [
-      "Queue<Integer> ${1:variable} = new LinkedList<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer Queue"
-  },
-  // java Scanner String Queue
-  "Java Scanner String Queue": {
-    "prefix": "jscanstrqueue",
-    "body": [
-      "Queue<String> ${1:variable} = new LinkedList<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String Queue"
-  },
-  // java Scanner Integer Stack
-  "Java Scanner Integer Stack": {
-    "prefix": "jscanintstack",
-    "body": [
-      "Stack<Integer> ${1:variable} = new Stack<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer Stack"
-  },
-  // java Scanner String Stack
-  "Java Scanner String Stack": {
-    "prefix": "jscanstrstack",
-    "body": [
-      "Stack<String> ${1:variable} = new Stack<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String Stack"
-  },
-  // java Scanner Integer Set
-  "Java Scanner Integer Set": {
-    "prefix": "jscanintset",
-    "body": [
-      "Set<Integer> ${1:variable} = new HashSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer Set"
-  },
-  // java Scanner String Set
-  "Java Scanner String Set": {
-    "prefix": "jscanstrset",
-    "body": [
-      "Set<String> ${1:variable} = new HashSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String Set"
-  },
-  // java Scanner Integer TreeMap
-  "Java Scanner Integer TreeMap": {
-    "prefix": "jscaninttreemap",
-    "body": [
-      "TreeMap<Integer, Integer> ${1:variable} = new TreeMap<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.put(scanner.nextInt(), scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer TreeMap"
-  },
-  // java Scanner String TreeMap
-  "Java Scanner String TreeMap": {
-    "prefix": "jscanstrtreemap",
-    "body": [
-      "TreeMap<String, String> ${1:variable} = new TreeMap<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.put(scanner.nextLine(), scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String TreeMap"
-  },
-  // java Scanner Integer PriorityQueue
-  "Java Scanner Integer PriorityQueue": {
-    "prefix": "jscanintpq",
-    "body": [
-      "PriorityQueue<Integer> ${1:variable} = new PriorityQueue<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer PriorityQueue"
-  },
-  // java Scanner String PriorityQueue
-  "Java Scanner String PriorityQueue": {
-    "prefix": "jscanstrpq",
-    "body": [
-      "PriorityQueue<String> ${1:variable} = new PriorityQueue<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String PriorityQueue"
-  },
-  // java Scanner Integer HashSet
-  "Java Scanner Integer HashSet": {
-    "prefix": "jscaninthashset",
-    "body": [
-      "HashSet<Integer> ${1:variable} = new HashSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer HashSet"
-  },
-  // java Scanner String HashSet
-  "Java Scanner String HashSet": {
-    "prefix": "jscanstrhashset",
-    "body": [
-      "HashSet<String> ${1:variable} = new HashSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String HashSet"
-  },
-  // java Scanner Integer TreeSet
-  "Java Scanner Integer TreeSet": {
-    "prefix": "jscaninttreeset",
-    "body": [
-      "TreeSet<Integer> ${1:variable} = new TreeSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer TreeSet"
-  },
-  // java Scanner String TreeSet
-  "Java Scanner String TreeSet": {
-    "prefix": "jscanstrtreeset",
-    "body": [
-      "TreeSet<String> ${1:variable} = new TreeSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String TreeSet"
-  },
-  // java Scanner Integer LinkedHashSet
-  "Java Scanner Integer LinkedHashSet": {
-    "prefix": "jscanintlinkedhashset",
-    "body": [
-      "LinkedHashSet<Integer> ${1:variable} = new LinkedHashSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextInt());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input Integer LinkedHashSet"
-  },
-  // java Scanner String LinkedHashSet
-  "Java Scanner String LinkedHashSet": {
-    "prefix": "jscanstrlinkedhashset",
-    "body": [
-      "LinkedHashSet<String> ${1:variable} = new LinkedHashSet<>();",
-      "for (int i = 0; i < ${1:variable}.size(); i++) {",
-      "    ${1:variable}.add(scanner.nextLine());",
-      "}",
-      "$0",
-    ],
-    "description": "Creates a Java class with a Scanner object for user input String LinkedHashSet"
-  },
+  "prefix": "jscanintlinkedlist",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "LinkedList<Integer> ${1:list} = new LinkedList<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:list}.add(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer LinkedList"
+ },
+ // Java Scanner String LinkedList
+ "Java Scanner String LinkedList": {
+  "prefix": "jscanstrlinkedlist",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "LinkedList<String> ${1:list} = new LinkedList<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:list}.add(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String LinkedList"
+ }
+ 
+ // Java Scanner Integer Queue
+ "Java Scanner Integer Queue": {
+  "prefix": "jscanintqueue",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "Queue<Integer> ${1:queue} = new LinkedList<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:queue}.offer(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer Queue"
+ },
+ 
+ // Java Scanner String Queue
+ "Java Scanner String Queue": {
+  "prefix": "jscansrqueue",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "Queue<String> ${1:queue} = new LinkedList<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:queue}.offer(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String Queue"
+ },
+ 
+ // Java Scanner Integer Stack
+ "Java Scanner Integer Stack": {
+  "prefix": "jscanintstack",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "Stack<Integer> ${1:stack} = new Stack<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:stack}.push(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer Stack"
+ },
+ 
+ // Java Scanner String Stack
+ "Java Scanner String Stack": {
+  "prefix": "jscansrstack",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "Stack<String> ${1:stack} = new Stack<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:stack}.push(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String Stack"
+ },
 
+ // Java Scanner Integer Set
+ "Java Scanner Integer Set": {
+  "prefix": "jscanintset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "Set<Integer> ${1:set} = new HashSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer Set"
+ },
+
+ // Java Scanner String Set
+ "Java Scanner String Set": {
+  "prefix": "jscansrset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "Set<String> ${1:set} = new HashSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String Set"
+ },
+
+ // Java Scanner Integer TreeMap
+ "Java Scanner Integer TreeMap": {
+  "prefix": "jscaninttreemap",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "Map<Integer, Integer> ${1:map} = new TreeMap<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:map}.put(scanner.nextInt(), scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer TreeMap"
+ },
+
+ // Java Scanner String TreeMap
+ "Java Scanner String TreeMap": {
+  "prefix": "jscansrtreemap",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "Map<String, Integer> ${1:map} = new TreeMap<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:map}.put(scanner.nextLine(), scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String TreeMap"
+ },
+
+ // Java Scanner Integer PriorityQueue
+ "Java Scanner Integer PriorityQueue": {
+  "prefix": "jscanintpriorityqueue",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "PriorityQueue<Integer> ${1:pqueue} = new PriorityQueue<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:pqueue}.offer(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer PriorityQueue"
+ },
+
+ // Java Scanner String PriorityQueue
+ "Java Scanner String PriorityQueue": {
+  "prefix": "jscansrpriorityqueue",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "PriorityQueue<String> ${1:pqueue} = new PriorityQueue<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:pqueue}.offer(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String PriorityQueue"
+ },
+
+ // Java Scanner Integer HashSet
+ "Java Scanner Integer HashSet": {
+  "prefix": "jscaninthashset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "Set<Integer> ${1:set} = new HashSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer HashSet"
+ },
+
+ // Java Scanner String HashSet
+ "Java Scanner String HashSet": {
+  "prefix": "jscansrhashset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "Set<String> ${1:set} = new HashSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String HashSet"
+ },
+
+ // Java Scanner Integer TreeSet
+ "Java Scanner Integer TreeSet": {
+  "prefix": "jscaninttreeset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "Set<Integer> ${1:set} = new TreeSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer TreeSet"
+ },
+
+ // Java Scanner String TreeSet
+ "Java Scanner String TreeSet": {
+  "prefix": "jscansrtreeset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "Set<String> ${1:set} = new TreeSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String TreeSet"
+ },
+
+ // Java Scanner Integer LinkedHashSet
+ "Java Scanner Integer LinkedHashSet": {
+  "prefix": "jscanintlinkedhashset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "",
+    "Set<Integer> ${1:set} = new LinkedHashSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextInt());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input Integer LinkedHashSet"
+ },
+
+ // Java Scanner String LinkedHashSet
+ "Java Scanner String LinkedHashSet": {
+  "prefix": "jscansrlinkedhashset",
+  "body": [
+    "Scanner scanner = new Scanner(System.in);",
+    "int n = scanner.nextInt();",
+    "scanner.nextLine(); // Consume the newline character",
+    "",
+    "Set<String> ${1:set} = new LinkedHashSet<>();",
+    "for (int i = 0; i < n; i++) {",
+    "    ${1:set}.add(scanner.nextLine());",
+    "}",
+    "$0"
+  ],
+  "description": "Creates a Java class with a Scanner object for user input String LinkedHashSet"
+ }
   /*----------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------------------*/
@@ -408,16 +500,16 @@
     ],
     "description": "Creates a Java output code"
   },
-// Output Array 
-  "Java ArrayList Output": {
+ // Output Array 
+  "Java Array Output": {
     "prefix": "joutarray",
     "body": [
-      "for (int i = 0; i < list.size(); i++) {",
-      "    System.out.println(list.get(i));",
+      "for (int i = 0; i < arr.length; i++) {",
+      "    System.out.println(arr[i]);",
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of Array"
   },
 
   // Output Arraylist
@@ -429,7 +521,7 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of ArrayList"
   },
   // Output Hashmap
   "Java HashMap Output": {
@@ -463,7 +555,7 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of Queue"
   },
   // Output Stack
   "Java Stack Output": {
@@ -475,7 +567,7 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of Stack"
   },
   // Output Set
   "Java Set Output": {
@@ -486,7 +578,7 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of a Set"
   },
   // Output Treemap
   "Java TreeMap Output": {
@@ -497,19 +589,19 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of Map"
   },
   // Output Priorityqueue
   "Java PriorityQueue Output": {
     "prefix": "joutpq",
     "body": [
-      "while (!pq.isEmpty()) {",
-      "    int element = pq.poll();",
+      "while (!pqueue.isEmpty()) {",
+      "    int element = pqueue.poll();",
       "    System.out.println(element);",
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of priority queue"
   },
   // Output Hashset
   "Java HashSet Output": {
@@ -520,7 +612,7 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of hashSet"
   },
   // Output Treeset
   "Java TreeSet Output": {
@@ -531,7 +623,7 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code of TreeSet"
   },
   // Output Linkedhashset
   "Java LinkedHashSet Output": {
@@ -542,7 +634,7 @@
       "}",
       "$0",
     ],
-    "description": "Creates a Java output code"
+    "description": "Creates a Java output code Of Linked Hash Set"
   },
 
  /*----------------------------------------------------------------------------------------------------*/
@@ -557,17 +649,16 @@
     "$0",
   ],
   "description": "Creates a Java class with an ArrayList Integer."
-},
-// Java ArrayList template for String
-"Java ArrayList Template String": {
+ },
+ // Java ArrayList template for String
+ "Java ArrayList Template String": {
   "prefix": "jarrayliststr",
   "body": [
     "ArrayList<String> list = new ArrayList<>();",
     "$0",
   ],
   "description": "Creates a Java class with an ArrayList String."
-},
-}
+ },
   // Java HashMap template Integer
   "Java HashMap Template Integer": {
     "prefix": "jhashmapint",
@@ -778,151 +869,8 @@
     "description": "Creates a Java class with a LinkedHashSet String."
   },
 
-   /*----------------------------------------------------------------------------------------------------*/
  /*----------------------------------------------------------------------------------------------------*/
  /*----------------------------------------------------------------------------------------------------*/
+ /*----------------------------------------------------------------------------------------------------*/
 
-
-//   // Iteration methods
-
-//   // Java ArrayList iteration template
-//   "Java ArrayList Iteration Template": {
-//     "prefix": "jarraylistiter",
-//     "body": [
-//       "import java.util.ArrayList;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        ArrayList<Integer> list = new ArrayList<>();",
-//       "        for (int element : list) {",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with an ArrayList iteration."
-//   },
-
-//   // Java HashMap iteration template
-//   "Java HashMap Iteration Template": {
-//     "prefix": "jhashmapiter",
-//     "body": [
-//       "import java.util.HashMap;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        HashMap<String, Integer> map = new HashMap<>();",
-//       "        for (Map.Entry<String, Integer> entry : map.entrySet()) {",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with a HashMap iteration."
-//   },
-
-//   // Java LinkedList iteration template
-//   "Java LinkedList Iteration Template": {
-//     "prefix": "jlinkedlistiter",
-//     "body": [
-//       "import java.util.LinkedList;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        LinkedList<Integer> list = new LinkedList<>();",
-//       "        for (int element : list) {",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with a LinkedList iteration."
-//   },
-
-//   // Java Queue iteration template
-//   "Java Queue Iteration Template": {
-//     "prefix": "jqueueiter",
-//     "body": [
-//       "import java.util.Queue;",
-//       "import java.util.LinkedList;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        Queue<Integer> queue = new LinkedList<>();",
-//       "        while (!queue.isEmpty()) {",
-//       "            int element = queue.poll();",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with a Queue iteration."
-//   },
-
-//   // Java Stack iteration template
-//   "Java Stack Iteration Template": {
-//     "prefix": "jstackiter",
-//     "body": [
-//       "import java.util.Stack;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        Stack<Integer> stack = new Stack<>();",
-//       "        while (!stack.isEmpty()) {",
-//       "            int element = stack.pop();",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with a Stack iteration."
-//   },
-
-//   // Java Set iteration template
-//   "Java Set Iteration Template": {
-//     "prefix": "jsetiter",
-//     "body": [
-//       "import java.util.Set;",
-//       "import java.util.HashSet;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        Set<Integer> set = new HashSet<>();",
-//       "        for (int element : set) {",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with a Set iteration."
-//   },
-
-//   // Java TreeMap iteration template
-//   "Java TreeMap Iteration Template": {
-//     "prefix": "jtreemapiter",
-//     "body": [
-//       "import java.util.TreeMap;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        TreeMap<String, Integer> map = new TreeMap<>();",
-//       "        for (Map.Entry<String, Integer> entry : map.entrySet()) {",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with a TreeMap iteration."
-//   },
-
-//   // Java PriorityQueue iteration template
-//   "Java PriorityQueue Iteration Template": {
-//     "prefix": "jpqueueiter",
-//     "body": [
-//       "import java.util.PriorityQueue;",
-//       "public class ${TM_FILENAME_BASE} {",
-//       "    public static void main(String[] args) {",
-//       "        PriorityQueue<Integer> pq = new PriorityQueue<>();",
-//       "        while (!pq.isEmpty()) {",
-//       "            int element = pq.poll();",
-//       "            $0",
-//       "        }",
-//       "    }",
-//       "}"
-//     ],
-//     "description": "Creates a Java class with a PriorityQueue iteration."
-//   }
 }

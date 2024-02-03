@@ -243,7 +243,7 @@
  
  // Java Scanner String Queue
  "Java Scanner String Queue": {
-  "prefix": "jscansrqueue",
+  "prefix": "jscanstrqueue",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",
@@ -276,7 +276,7 @@
  
  // Java Scanner String Stack
  "Java Scanner String Stack": {
-  "prefix": "jscansrstack",
+  "prefix": "jscanstrstack",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",
@@ -309,7 +309,7 @@
 
  // Java Scanner String Set
  "Java Scanner String Set": {
-  "prefix": "jscansrset",
+  "prefix": "jscanstrset",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",
@@ -342,7 +342,7 @@
 
  // Java Scanner String TreeMap
  "Java Scanner String TreeMap": {
-  "prefix": "jscansrtreemap",
+  "prefix": "jscanstrtreemap",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",
@@ -375,7 +375,7 @@
 
  // Java Scanner String PriorityQueue
  "Java Scanner String PriorityQueue": {
-  "prefix": "jscansrpriorityqueue",
+  "prefix": "jscanstrpriorityqueue",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",
@@ -408,7 +408,7 @@
 
  // Java Scanner String HashSet
  "Java Scanner String HashSet": {
-  "prefix": "jscansrhashset",
+  "prefix": "jscanstrhashset",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",
@@ -441,7 +441,7 @@
 
  // Java Scanner String TreeSet
  "Java Scanner String TreeSet": {
-  "prefix": "jscansrtreeset",
+  "prefix": "jscanstrtreeset",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",
@@ -474,7 +474,7 @@
 
  // Java Scanner String LinkedHashSet
  "Java Scanner String LinkedHashSet": {
-  "prefix": "jscansrlinkedhashset",
+  "prefix": "jscanstrlinkedhashset",
   "body": [
     "Scanner scanner = new Scanner(System.in);",
     "int n = scanner.nextInt();",

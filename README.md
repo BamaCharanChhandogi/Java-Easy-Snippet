@@ -13,7 +13,7 @@ Boost your Java development productivity with the **Java Boilerplate Generator**
 
 ## Demo Screenshot
 
-![hello](images/screen.png)
+![hello](https://github.com/BamaCharanChhandogi/Java-Easy-Snippet/blob/master/images/screen.png?raw=true)
 
 ## Example Java Snippet
 

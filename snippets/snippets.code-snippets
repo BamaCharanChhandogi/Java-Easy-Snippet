@@ -702,7 +702,6 @@
     "description": "Creates a Java class with a HashMap."
   },
 
-
   // Java LinkedList template Integer type
   "Java LinkedList Template Integer": {
     "prefix": "jlinkedlistint",
@@ -721,7 +720,42 @@
     ],
     "description": "Creates a Java class with a LinkedList String."
   },
-
+  // Java Doubly linked list template Integer
+  "Java Doubly LinkedList Template Integer": {
+    "prefix": "jdlinkedlistint",
+    "body": [
+      "DoublyLinkedList<Integer> list = new DoublyLinkedList<>();",
+      "$0",
+    ],
+    "description": "Creates a Java class with a Doubly LinkedList Integer."
+  },
+  // Java Doubly linked list template String
+  "Java Doubly LinkedList Template String": {
+    "prefix": "jdlinkedliststr",
+    "body": [
+      "DoublyLinkedList<String> list = new DoublyLinkedList<>();",
+      "$0",
+    ],
+    "description": "Creates a Java class with a Doubly LinkedList String."
+  },
+  // Java Circular linked list template Integer
+  "Java Circular LinkedList Template Integer": {
+    "prefix": "jclinkedlistint",
+    "body": [
+      "CircularLinkedList<Integer> list = new CircularLinkedList<>();",
+      "$0",
+    ],
+    "description": "Creates a Java class with a Circular LinkedList Integer."
+  },
+  // Java Circular linked list template String
+  "Java Circular LinkedList Template String": {
+    "prefix": "jclinkedliststr",
+    "body": [
+      "CircularLinkedList<String> list = new CircularLinkedList<>();",
+      "$0",
+    ],
+    "description": "Creates a Java class with a Circular LinkedList String."
+  },
 
   // Java Queue template using a LinkedList Integer
   "Java Queue Template LinkedList Integer": {
@@ -901,7 +935,7 @@
  "User Defined Integer LinkedList": {
   "prefix": "userlinkedlist",
   "body": [
-      "class LinkedList<T> {",
+      "static class LinkedList<T> {",
       "\tprivate Node<T> head;",
       "\tprivate int size;",
       "",
@@ -946,17 +980,8 @@
       "\tpublic int size() {",
       "\t\treturn size;",
       "\t}",
-      "}"
-      "",
-      "public static void main(String[] args) {",
-      "\tLinkedList<Integer> list = new LinkedList<>();",
-      "\tlist.add(1);",
-      "\tlist.add(2);",
-      "\tlist.add(3);",
-      "\tlist.print();",
-      "\tSystem.out.println(\"Size: \" + list.size());",
-      "}"
-
+      "}",
+      ""
   ],
   "description": "Creates a user-defined Integer LinkedList class in Java."
 },
@@ -964,7 +989,7 @@
   "User Defined Stack": {
     "prefix": "userstack",
     "body": [
-        "class Stack<T> {",
+        "static class Stack<T> {",
         "\tprivate Node<T> top;",
         "\tprivate int size;",
         "",
@@ -1015,17 +1040,7 @@
         "\t\treturn size;",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tStack<Integer> stack = new Stack<>();",
-        "\tstack.push(1);",
-        "\tstack.push(2);",
-        "\tstack.push(3);",
-        "\tSystem.out.println(stack.pop());",
-        "\tSystem.out.println(stack.peek());",
-        "\tSystem.out.println(stack.size());",
-        "}"
-  
+        ""
     ],
     "description": "Creates a user-defined Stack class in Java."
   },
@@ -1034,7 +1049,7 @@
   "User Defined Queue": {
     "prefix": "userqueue",
     "body": [
-        "class Queue<T> {",
+        "static class Queue<T> {",
         "\tprivate Node<T> front;",
         "\tprivate Node<T> rear;",
         "\tprivate int size;",
@@ -1092,16 +1107,7 @@
         "\t\treturn size;",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tQueue<Integer> queue = new Queue<>();",
-        "\tqueue.offer(1);",
-        "\tqueue.offer(2);",
-        "\tqueue.offer(3);",
-        "\tSystem.out.println(queue.poll());",
-        "\tSystem.out.println(queue.peek());",
-        "\tSystem.out.println(queue.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined Queue class in Java."
   },
@@ -1110,7 +1116,7 @@
   "User Defined PriorityQueue": {
     "prefix": "userpriorityqueue",
     "body": [
-        "class PriorityQueue<T> {",
+        "static class PriorityQueue<T extends Comparable<T>> {",
         "\tprivate ArrayList<T> list;",
         "",
         "\tpublic PriorityQueue() {",
@@ -1144,16 +1150,7 @@
         "\t\treturn list.size();",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tPriorityQueue<Integer> pq = new PriorityQueue<>();",
-        "\tpq.offer(3);",
-        "\tpq.offer(1);",
-        "\tpq.offer(2);",
-        "\tSystem.out.println(pq.poll());",
-        "\tSystem.out.println(pq.peek());",
-        "\tSystem.out.println(pq.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined PriorityQueue class in Java."
   },
@@ -1162,7 +1159,7 @@
   "User Defined HashSet": {
     "prefix": "userhashset",
     "body": [
-        "class HashSet<T> {",
+        "static class HashSet<T> {",
         "\tprivate HashMap<T, Boolean> map;",
         "",
         "\tpublic HashSet() {",
@@ -1189,17 +1186,7 @@
         "\t\treturn map.size();",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tHashSet<Integer> set = new HashSet<>();",
-        "\tset.add(1);",
-        "\tset.add(2);",
-        "\tset.add(3);",
-        "\tSystem.out.println(set.contains(2));",
-        "\tset.remove(2);",
-        "\tSystem.out.println(set.contains(2));",
-        "\tSystem.out.println(set.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined HashSet class in Java."
   },
@@ -1208,7 +1195,7 @@
   "User Defined TreeSet": {
     "prefix": "usertreeset",
     "body": [
-        "class TreeSet<T> {",
+        "static class TreeSet<T> {",
         "\tprivate TreeMap<T, Boolean> map;",
         "",
         "\tpublic TreeSet() {",
@@ -1235,17 +1222,7 @@
         "\t\treturn map.size();",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tTreeSet<Integer> set = new TreeSet<>();",
-        "\tset.add(1);",
-        "\tset.add(2);",
-        "\tset.add(3);",
-        "\tSystem.out.println(set.contains(2));",
-        "\tset.remove(2);",
-        "\tSystem.out.println(set.contains(2));",
-        "\tSystem.out.println(set.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined TreeSet class in Java."
   },
@@ -1254,7 +1231,7 @@
   "User Defined LinkedHashSet": {
     "prefix": "userlinkedhashset",
     "body": [
-        "class LinkedHashSet<T> {",
+        "static class LinkedHashSet<T> {",
         "\tprivate LinkedHashMap<T, Boolean> map;",
         "",
         "\tpublic LinkedHashSet() {",
@@ -1281,17 +1258,7 @@
         "\t\treturn map.size();",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tLinkedHashSet<Integer> set = new LinkedHashSet<>();",
-        "\tset.add(1);",
-        "\tset.add(2);",
-        "\tset.add(3);",
-        "\tSystem.out.println(set.contains(2));",
-        "\tset.remove(2);",
-        "\tSystem.out.println(set.contains(2));",
-        "\tSystem.out.println(set.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined LinkedHashSet class in Java."
   },
@@ -1300,7 +1267,7 @@
   "User Defined HashMap": {
     "prefix": "userhashmap",
     "body": [
-        "class HashMap<K, V> {",
+        "static class HashMap<K, V> {",
         "\tprivate ArrayList<Entry<K, V>> list;",
         "",
         "\tpublic HashMap() {",
@@ -1362,17 +1329,7 @@
         "\t\t}",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tHashMap<String, Integer> map = new HashMap<>();",
-        "\tmap.put(\"a\", 1);",
-        "\tmap.put(\"b\", 2);",
-        "\tmap.put(\"c\", 3);",
-        "\tSystem.out.println(map.get(\"b\"));",
-        "\tmap.remove(\"b\");",
-        "\tSystem.out.println(map.containsKey(\"b\"));",
-        "\tSystem.out.println(map.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined HashMap class in Java."
   },
@@ -1381,7 +1338,7 @@
   "User Defined TreeMap": {
     "prefix": "usertreemap",
     "body": [
-        "class TreeMap<K, V> {",
+        "static class TreeMap<K, V> {",
         "\tprivate ArrayList<Entry<K, V>> list;",
         "",
         "\tpublic TreeMap() {",
@@ -1439,8 +1396,7 @@
         "\t\tV value;",
         "",
         "\t\tEntry(K key, V value) {",
-        "\t\t\tthis.key
-        = key;",
+        "\t\t\tthis.key = key;",
         "\t\t\tthis.value = value;",
         "\t\t}",
         "",
@@ -1449,17 +1405,7 @@
         "\t\t}",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tTreeMap<String, Integer> map = new TreeMap<>();",
-        "\tmap.put(\"a\", 1);",
-        "\tmap.put(\"b\", 2);",
-        "\tmap.put(\"c\", 3);",
-        "\tSystem.out.println(map.get(\"b\"));",
-        "\tmap.remove(\"b\");",
-        "\tSystem.out.println(map.containsKey(\"b\"));",
-        "\tSystem.out.println(map.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined TreeMap class in Java."
   },
@@ -1468,7 +1414,7 @@
   "User Defined ArrayList": {
     "prefix": "userarraylist",
     "body": [
-        "class ArrayList<T> {",
+        "static class ArrayList<T> {",
         "\tprivate T[] array;",
         "\tprivate int size;",
         "",
@@ -1480,6 +1426,8 @@
         "",
         "\tpublic void add(T element) {",
         "\t\tif (size == array.length) {",
+        "",
+        "\t\t\t@SuppressWarnings(\"unchecked\")",
         "\t\t\tT[] newArray = (T[]) new Object[size * 2];",
         "\t\t\tSystem.arraycopy(array, 0, newArray, 0, size);",
         "\t\t\tarray = newArray;",
@@ -1498,15 +1446,7 @@
         "\t\treturn size;",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tArrayList<Integer> list = new ArrayList<>();",
-        "\tlist.add(1);",
-        "\tlist.add(2);",
-        "\tlist.add(3);",
-        "\tSystem.out.println(list.get(1));",
-        "\tSystem.out.println(list.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined ArrayList class in Java."
   },
@@ -1515,7 +1455,7 @@
   "User Defined Array": {
     "prefix": "userarray",
     "body": [
-        "class Array<T> {",
+        "static class Array<T> {",
         "\tprivate T[] array;",
         "\tprivate int size;",
         "",
@@ -1527,6 +1467,8 @@
         "",
         "\tpublic void add(T element) {",
         "\t\tif (size == array.length) {",
+        "",
+        "\t\t\t@SuppressWarnings(\"unchecked\")",
         "\t\t\tT[] newArray = (T[]) new Object[size * 2];",
         "\t\t\tSystem.arraycopy(array, 0, newArray, 0, size);",
         "\t\t\tarray = newArray;",
@@ -1545,15 +1487,7 @@
         "\t\treturn size;",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tArray<Integer> array = new Array<>(10);",
-        "\tarray.add(1);",
-        "\tarray.add(2);",
-        "\tarray.add(3);",
-        "\tSystem.out.println(array.get(1));",
-        "\tSystem.out.println(array.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined Array class in Java."
   },
@@ -1562,7 +1496,7 @@
   "User Defined DoublyLinkedList": {
     "prefix": "userdoublylinkedlist",
     "body": [
-        "class DoublyLinkedList<T> {",
+        "static class DoublyLinkedList<T> {",
         "\tprivate Node<T> head;",
         "\tprivate Node<T> tail;",
         "\tprivate int size;",
@@ -1624,15 +1558,7 @@
         "\t\treturn size;",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tDoublyLinkedList<Integer> list = new DoublyLinkedList<>();",
-        "\tlist.addFirst(1);",
-        "\tlist.addFirst(2);",
-        "\tlist.addLast(3);",
-        "\tlist.print();",
-        "\tSystem.out.println(\"Size: \" + list.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined DoublyLinkedList class in Java."
   },
@@ -1640,7 +1566,7 @@
   "User Defined CircularLinkedList": {
     "prefix": "usercircularlinkedlist",
     "body": [
-        "class CircularLinkedList<T> {",
+        "static class CircularLinkedList<T> {",
         "\tprivate Node<T> head;",
         "\tprivate Node<T> tail;",
         "\tprivate int size;",
@@ -1688,15 +1614,7 @@
         "\t\treturn size;",
         "\t}",
         "}"
-        "",
-        "public static void main(String[] args) {",
-        "\tCircularLinkedList<Integer> list = new CircularLinkedList<>();",
-        "\tlist.add(1);",
-        "\tlist.add(2);",
-        "\tlist.add(3);",
-        "\tlist.print();",
-        "\tSystem.out.println(\"Size: \" + list.size());",
-        "}"
+        ""
     ],
     "description": "Creates a user-defined CircularLinkedList class in Java."
   }

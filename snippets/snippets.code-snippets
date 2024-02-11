@@ -932,7 +932,7 @@
  /*----------------------------------------------------------------------------------------------------*/
 
   // Java user Defined LinkedList
- "User Defined Integer LinkedList": {
+ "User Defined LinkedList": {
   "prefix": "userlinkedlist",
   "body": [
       "static class LinkedList<T> {",
@@ -983,7 +983,7 @@
       "}",
       ""
   ],
-  "description": "Creates a user-defined Integer LinkedList class in Java."
+  "description": "Creates a user-defined LinkedList class in Java."
 },
   // Java user Defined Stack
   "User Defined Stack": {

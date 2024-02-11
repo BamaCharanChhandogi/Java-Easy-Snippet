@@ -15,42 +15,112 @@ Boost your Java development productivity with the **Java Boilerplate Generator**
 
 ![hello](images/screen.png)
 
-## Example Java Snippet
+# All  Java Snippet Shortcuts here
 
 | No  | Java Snippet Short Code | Description                         |
-| :-- | :----------------------- | :---------------------------------- |
+| :-- | :----------------------- | :----------------------------------|
 | 1   | java                    | Basic Java Class with Main Method   |
-| 2   | jscan                   | Java Class with Scanner             |
-| 3   | jarraylist              | Java Class with ArrayList           |
-| 4   | jhashmap                | Java Class with HashMap             |
-| 5   | jlinkedlist             | Java Class with LinkedList          |
-| 6   | jqueue                  | Java Class with Queue                |
-| 7   | jstack                  | Java Class with Stack                |
-| 8   | jset                    | Java Class with HashSet              |
-| 9   | jtreemap                | Java Class with TreeMap              |
-| 10  | jpqueue                 | Java Class with PriorityQueue        |
-| 11  | jhashset                | Java Class with HashSet              |
-| 12  | jtreeset                | Java Class with TreeSet              |
-| 13  | jlinkedhashset          | Java Class with LinkedHashSet        |
-| 14  | jarraylistiter          | Java Class with ArrayList Iteration  |
-| 15  | jhashmapiter            | Java Class with HashMap Iteration    |
-| 16  | jlinkedlistiter         | Java Class with LinkedList Iteration |
-| 17  | jqueueiter              | Java Class with Queue Iteration      |
-| 18  | jstackiter              | Java Class with Stack Iteration      |
-| 19  | jsetiter                | Java Class with Set Iteration        |
-| 20  | jtreemapiter            | Java Class with TreeMap Iteration    |
-| 21  | jpqueueiter             | Java Class with PriorityQueue Iteration  |
-| 21  | jout                    | Java Class with output                |
+| 2   | jclass                    | Basic Java public Class code      |
+| 3   | jmain                    | Basic Java code with Main Method   |
+| --- |--------------------------|----------------------------------- |
+| --- |--------------------------|----------------------------------- |
+| 4   | jscan                   |Java class with a Scanner object for user input  |
+| 5   | jscanint                   | Scanner object for user input Integer  |
+| 6   | jscanstr                   | Scanner object for user input String        |
+| 7   | jscandouble                   | Scanner object for user input double   |
+| 8   | jscanlong                   | Scanner object for user input Long|
+| 9   | jscanfloat                   | Scanner object for user input Float|
+| 10   | jscanbool                   | Scanner object for user input Boolean|
+| 11   | jscanbyte                   | Scanner object for user input Byte|
+| 12   | jscanshort                   |Scanner object for user input short|
+| 13   | jscanchr                   |Scanner object for user input Char |
+| 14   | jscanbiginteger                   |Scanner object for user input Big Integer |
+| 15  | jscanbigdecimal                   |Scanner object for user input Big Decimal |
+| 16  | jscannextline                   |Scanner object for user input Next Line|
+| 17  | jscanintarray                   | Scanner object for user input Integer Array|
+| 18   | jscanstrarray                   | Scanner object for user input String Array   |
+| 19   | jscanintarraylist                   | Scanner object for user input Integer ArrayList |
+| 20   | jscanstrarraylist                   |Scanner object for user input String ArrayList |
+| 21   | jscanintlinkedlist                   | Scanner object for user input Integer LinedList|
+| 22   | jscanstrlinkedlist                   | Scanner object for user input String LinkedList|
+| 23   | jscanintqueue                   | Scanner object for user input Integer Queue|
+| 24   | jscanstrqueue                   | Scanner object for user String Queue |
+| 25   | jscanintstack                   | Scanner object for user input Integer stack |
+| 26   | jscanstrstack                   | Scanner object for user String Integer Stack |
+| 27   | jscanintset              | Scanner object for user input Integer set|
+| 28   | jscanstrset              | Scanner object for user input String Set|
+| 29   | jscaninttreemap              |Scanner object for user input Integer TreeMap |
+| 30  | jscanstrtreemap              |Scanner object for user input String treeMap |
+| 31   | jscanintpriorityqueue              |Scanner object for user input Integer Priority Queue|
+| 32  | jscanstrpriorityqueue              |Scanner object for user String Integer Priority Queue|
+| 33   | jscaninthashset         |Scanner object for user input Integer Hash Set|
+| 34   | jscanstrhashset         |Scanner object for user input String Hash set|
+| 35   | jscaninttreeset         |Scanner object for user input Integer Tree Set|
+| 36   | jscanstrtreeset         |Scanner object for user input String Tree Set|
+| 37   | jscanintlinkedhashset   |Scanner object for user input Integer Linked Hash Set |
+| 38   | jscanstrlinkedhashset   |Scanner object for user input String Linked Hash set|
+| --- |--------------------------|----------------------------------- |
+| --- |--------------------------|----------------------------------- |
+| 39   | jout                    | Creates a Java output  code        |
+| 40   | joutarray               | Creates a Java output code of Array|
+| 41   | joutarraylist           | Creates a Java output code of ArrayList|
+| 42   | jouthashmap             | Creates a Java output  code HashMap    |
+| 43   | joutlinkedlist          | Creates a Java output  code LinkedList |
+| 44   | joutqueue               | Creates a Java output  code Queue   |
+| 45   | joutstack               | Creates a Java output  code Stack   |
+| 46   | joutset                 | Creates a Java output  code    Set  |
+| 47   | jouttreemap             | Creates a Java output  code Tree Map|
+| 48   | joutpq                  | Creates a Java output  code Priority Queue|
+| 49   | jouthashset             | Creates a Java output code of Hash-Set    |
+| 50   | jouttreeset             | Creates a Java output code of Tree-Set|
+| 51   | joutlinkedhashset       | Creates a Java output code of Linked Hash Set|
+| --- |--------------------------|----------------------------------- |
+| --- |--------------------------|----------------------------------- |
+| 52   | jarraylist              | Java Class with ArrayList           |
+| 53   | jarraylist              | Java Class with ArrayList           |
+| 54   | jarraylist              | Java Class with ArrayList           |
+| 55   | jhashmap                | Java Class with HashMap             |
+| 56   | jlinkedlist             | Java Class with LinkedList          |
+| 57   | jqueue                  | Java Class with Queue               |
+| 58   | jstack                  | Java Class with Stack               |
+| 59   | jset                    | Java Class with HashSet             |
+| 60  | jtreemap                | Java Class with TreeMap             |
+| 61  | jpqueue                 | Java Class with PriorityQueue       |
+| 62  | jhashset                | Java Class with HashSet             |
+| 63  | jtreeset                | Java Class with TreeSet             |
+| 64  | jlinkedhashset          | Java Class with LinkedHashSet       |
+| 65  | jarraylistiter          | Java Class with ArrayList Iteration |
+| 66  | jhashmapiter            | Java Class with HashMap Iteration   |
+| 67  | jlinkedlistiter         | Java Class with LinkedList Iteration|
+| 68  | jqueueiter              | Java Class with Queue Iteration     |
+| 69  | jstackiter              | Java Class with Stack Iteration     |
+| 70  | jsetiter                | Java Class with Set Iteration       |
+| 71  | jtreemapiter            | Java Class with TreeMap Iteration   |
+| 72  | jpqueueiter             | Java Class with PriorityQueue Iteration  |
+| --- |-------------------------|----------------------------------- |
+| --- |-------------------------|----------------------------------- |
+| 73  | userarray               |user-defined Array                    |
+| 74  | userarraylist            | user-defined ArrayList    |
+| 75  | userlinkedlist            | user-defined Singly LinkedList   |
+| 76  | userdoublylinkedlist            | user-defined Doubly  LinkedList   |
+| 77  | usercircularlinkedlist            | user-defined Circular LinkedList |
+| 78  | userstack            |user-defined Stack  |
+| 79  | userqueue            |user-defined Queue   |
+| 80  | userpriorityqueue            |user-defined Priority Queue   |
+| 81  | userhashset            |user-defined Hash Set  |
+| 82  | usertreeset            | user-defined Tree Set   |
+| 83 | userlinkedhashset            | User-defined Linked Hash Set  |
+| 84  | userhashmap            | User-defined Hash Map   |
+| 85  | usertreemap            | User-defined Tree Map   |
 
-
-
+<br>
 <!-- ## View Demo Codes  -->
 
 <!-- ![java-easy-snippet](#) -->
 
-## View Snippet Codes
+# View Sample Snippet Codes of All Formats.
 
-### 1. java = Basic Java Class with Main Method
+### ❇️ java = Basic Java Class with Main Method
 
 ```java
 public class Main {
@@ -59,64 +129,56 @@ public class Main {
     }
 }
 ```
-### 2. jscan = Java Class with Scanner
+### ❇️ jclass = Basic Java Public Class
+```java
+public class Main {
+}
+```
+### ❇️ jmain = Basic Java Main Method
+```java
+    public static void main(String[] args) {
+        $0
+    }
+```
+```<!------------------------------------------------------------------------------------------> ```
+
+### ❇️ jscan = Java Class with Scanner
 ```java
 Scanner scanner = new Scanner(System.in);
 ```
 <!-- Input section -->
-## 3. jscanint = Creates a Java class with a Scanner object for user input Integer
+### ❇️ jscanint = Creates a Java class with a Scanner object for user input Integer
 ```java
 int ${1:variable} = scanner.nextInt();
 ```
 
-## 4. jscanstr = Creates a Java class with a Scanner object for user input String
+### ❇️ jscanstr = Creates a Java class with a Scanner object for user input String
 ```java 
 String ${1:variable} = scanner.nextLine();
 ```
 
-## 5. jscandouble = Creates a Java class with a Scanner object for user input Double
+### ❇️ jscandouble = Creates a Java class with a Scanner object for user input Double
 ```java
 double ${1:variable} = scanner.nextDouble();
 ```
-## 6. jscandfloat = Creates a Java class with a Scanner object for user input Float
+## ❇️ jscandfloat = Creates a Java class with a Scanner object for user input Float
 ```java
 float ${1:variable} = scanner.nextFloat();
 ```
-## 7. jscanlong = Creates a Java class with a Scanner object for user input Long
+## ❇️ jscanlong = Creates a Java class with a Scanner object for user input Long
 ```java
 float ${1:variable} = scanner.nextLong();
 ```
-## 8. jscanbool = Creates a Java class with a Scanner object for user input Boolean
+## ❇️ jscanbool = Creates a Java class with a Scanner object for user input Boolean
 ```java
 boolean ${1:variable} = scanner.nextBoolean();
 ```
-## 9. jscanbyte =  Creates a Java class with a Scanner object for user input Byte.
-```java
-byte ${1:variable} = scanner.nextByte();
-```
-## 10. jscanshort = Creates a Java class with a Scanner object for user input Short
-```java
-short ${1:variable} = scanner.nextShort();
-```
-## 11. jscanchr =  Creates a Java class with a Scanner object for user input Char
-```java
-char ${1:variable} = scanner.next().charAt(0);
-```
 
-## 12. jscanbiginteger = Creates a Java class with a Scanner object for user input BigInteger
-```java
-BigInteger ${1:variable} = scanner.nextBigInteger();
-```
-
-## 13. jscanbigdecimal = Creates a Java class with a Scanner object for user input BigDecimal
-```java
-BigDecimal ${1:variable} = scanner.nextBigDecimal();
-```
-## 14. jscannextline = Creates a Java class with a Scanner object for user input Line
+## ❇️ jscannextline = Creates a Java class with a Scanner object for user input Line
 ```java
 scanner.nextLine();
 ```
-## 15. jscanintarray = Creates a Java class with a Scanner object for user input Integer Array.
+## ❇️ jscanintarray = Creates a Java class with a Scanner object for user input Integer Array.
 ```java
 Scanner scanner = new Scanner(System.in);
 int[] arr = new int[scanner.nextInt()];
@@ -125,7 +187,7 @@ for (int i = 0; i < arr.length; i++) {
     arr[i] = scanner.nextInt();
 }
 ```
-## 16. jscanstrarray = Creates a Java class with a Scanner object for user input String Array
+### ❇️ jscanstrarray = Creates a Java class with a Scanner object for user input String Array
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -136,7 +198,7 @@ for (int i = 0; i <arr.length; i++) {
     arr[i] = scanner.nextLine();
 }
 ```
-## 17. jscanintarraylist = Creates a Java class with a Scan scanner object for user input Integer Array list
+### ❇️ jscanintarraylist = Creates a Java class with a Scan scanner object for user input Integer Array list
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -146,7 +208,7 @@ for (int i = 0; i < n; i++) {
     list.add(scanner.nextInt());
 }
 ```
-## 18. jscanstrarraylist = Creates a Java class with a Scan scanner object for user input String Array list
+### ❇️ jscanstrarraylist = Creates a Java class with a Scan scanner object for user input String Array list
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -157,7 +219,7 @@ for (int i = 0; i < n; i++) {
     list.add(scanner.nextLine());
 }
 ```
-## 19. jscanintlinkedlist = Creates a Java class with a Scan scanner object for user input Integer LinkedList
+### ❇️ jscanintlinkedlist = Creates a Java class with a Scan scanner object for user input Integer LinkedList
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -167,7 +229,7 @@ for (int i = 0; i < n; i++) {
     list.add(scanner.nextInt());
 }
 ```
-## 20. jscanstrlinkedlist = Creates a Java class with a Scan scanner object for user input String LinkedList
+### ❇️ jscanstrlinkedlist = Creates a Java class with a Scan scanner object for user input String LinkedList
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -178,7 +240,7 @@ for (int i = 0; i < n; i++) {
     list.add(scanner.nextLine());
 }
 ```
-## 21. jscanintqueue = Creates a Java class with a Scan scanner object for user input Integer Queue
+### ❇️ jscanintqueue = Creates a Java class with a Scan scanner object for user input Integer Queue
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -188,7 +250,7 @@ for (int i = 0; i < n; i++) {
     queue.offer(scanner.nextInt());
 }
 ```
-## 22. jscanstrqueue = Creates a Java class with a Scan scanner object for user input String Queue
+### ❇️ jscanstrqueue = Creates a Java class with a Scan scanner object for user input String Queue
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -199,7 +261,7 @@ for (int i = 0; i < n; i++) {
     queue.offer(scanner.nextLine());
 }
 ```
-## 23. jscanintstack = Creates a Java class with a Scan scanner object for user input Integer Stack
+### ❇️ jscanintstack = Creates a Java class with a Scan scanner object for user input Integer Stack
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -209,7 +271,7 @@ for (int i = 0; i < n; i++) {
     stack.push(scanner.nextInt());
 }
 ```
-## 24. jscanstrstack = Creates a Java class with a Scan scanner object for user input String Stack
+### ❇️ jscanstrstack = Creates a Java class with a Scan scanner object for user input String Stack
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -220,7 +282,7 @@ for (int i = 0; i < n; i++) {
     stack.push(scanner.nextLine());
 }
 ```
-## 25. jscanintset = Creates a Java class with a Scan scanner object for user input Integer Set
+### ❇️ jscanintset = Creates a Java class with a Scan scanner object for user input Integer Set
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -230,7 +292,7 @@ for (int i = 0; i < n; i++) {
     set.add(scanner.nextInt());
 }
 ```
-## 26. jscanstrset = Creates a Java class with a Scan scanner object for user input String Set
+### ❇️ jscanstrset = Creates a Java class with a Scan scanner object for user input String Set
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -242,7 +304,7 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-## 27. jscaninttreemap = Creates a Java class with a Scan scanner object for user input Integer TreeMap
+### ❇️ jscaninttreemap = Creates a Java class with a Scan scanner object for user input Integer TreeMap
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -252,7 +314,7 @@ for (int i = 0; i < n; i++) {
     set.add(scanner.nextInt());
 }
 ```
-## 28. jscansrset = Creates a Java class with a Scan scanner object for user input String TreeMap
+### ❇️ jscansrset = Creates a Java class with a Scan scanner object for user input String TreeMap
 ```java
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
@@ -263,54 +325,193 @@ for (int i = 0; i < n; i++) {
     map.put(scanner.nextLine(), scanner.nextInt());
 }
 ```
+```<!-------------------------------------------------------------------------------------> ```
 
+### ❇️ jout = Creates a Java output code
+```java
+System.out.println();
+```
+### ❇️ joutarray = Creates a Java output code of Array
+```java
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}
+```
+### ❇️ joutarraylist = Creates a Java output code of ArrayList
+```java
+for (int i = 0; i < list.size(); i++) {
+    System.out.println(list.get(i));
+}
+```
+### ❇️ jouthashmap = Creates a Java output code of Hash Map
+```java
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + entry.getValue());
+}
+```
+### ❇️ joutlinkedlist = Creates a Java output code of LinkedList
+```java
+for (int i = 0; i < list.size(); i++) {
+    System.out.println(list.get(i));
+}
+```
+```<!---------------------------------------------------------------------------------> ```
 
-
-
-### 1. jarraylist = Java Class with ArrayList
+### ❇️ jarraylist = Java Class with ArrayList
 ```java
 ArrayList<Integer> list = new ArrayList<>();
 ```
-### 2. jhashmap = Java Class with HashMap
+### ❇️ jhashmap = Java Class with HashMap
 ```java
 HashMap<String, Integer> map = new HashMap<>();
 ```
-### 3. jlinkedlist = Java Class with LinkedList
+### ❇️ jlinkedlist = Java Class with LinkedList
 ```java
 LinkedList<Integer> list = new LinkedList<>();
 ```
-### 4. jqueue = Java Class with Queue
+### ❇️ jqueue = Java Class with Queue
 ```java
 Queue<Integer> queue = new LinkedList<>();
 ```
-### 5. jstack = Java Class with Stack
+### ❇️ jstack = Java Class with Stack
 ```java
 Stack<Integer> stack = new Stack<>();
 ```
-### 6. jset = Java Class with HashSet
+### ❇️ jset = Java Class with HashSet
 ```java
 HashSet<Integer> set = new HashSet<>();
 ```
-### 7. jtreemap = Java Class with TreeMap
+```<!--------------------------------------------------------------------------------------> ```
+### ❇️ userlinkedlist = User Defined Linked List code.
 ```java
-TreeMap<String, Integer> map = new TreeMap<>();
-```
+static class LinkedList<T> {
+    private Node<T> head;
+    private int size;
 
-### 8. jpqueue = Java Class with PriorityQueue
-```java
-PriorityQueue<Integer> pq = new PriorityQueue<>();
-```
+    private static class Node<T> {
+        T data;
+        Node<T> next;
 
-## 9. jhashset = Java Class with HashSet
-```java
-HashSet<Integer> set = new HashSet<>();
-```
+        Node(T data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
 
-## 10. jtreeset = Java Class with TreeSet
-```java
-TreeSet<Integer> set = new TreeSet<>();
+    public LinkedList() {
+        head = null;
+        size = 0;
+    }
+
+    public void add(T element) {
+        Node<T> newNode = new Node<>(element);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node<T> current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+        size++;
+    }
+
+    public void print() {
+        Node<T> current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    public int size() {
+        return size;
+    }
+}
 ```
-## 11. jlinkedhashset = Java Class with LinkedHashSet
+### ❇️ userhashset = User defined hash Set 
 ```java
-LinkedHashSet<Integer> set = new LinkedHashSet<>();
+static class HashSet<T> {
+    private HashMap<T, Boolean> map;
+
+    public HashSet() {
+        map = new HashMap<>();
+    }
+
+    public void add(T element) {
+        map.put(element, true);
+    }
+
+    public boolean contains(T element) {
+        return map.containsKey(element);
+    }
+
+    public void remove(T element) {
+        map.remove(element);
+    }
+
+    public boolean isEmpty() {
+        return map.isEmpty();
+    }
+
+    public int size() {
+        return map.size();
+    }
+}
+```
+### ❇️ userstack = User Defined Stack 
+```java
+static class Stack<T> {
+    private Node<T> top;
+    private int size;
+
+    private static class Node<T> {
+        T data;
+        Node<T> next;
+
+        Node(T data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    public Stack() {
+        top = null;
+        size = 0;
+    }
+
+    public void push(T element) {
+        Node<T> newNode = new Node<>(element);
+        newNode.next = top;
+        top = newNode;
+        size++;
+    }
+
+    public T pop() {
+        if (top == null) {
+            throw new EmptyStackException();
+        }
+        T data = top.data;
+        top = top.next;
+        size--;
+        return data;
+    }
+
+    public T peek() {
+        if (top == null) {
+            throw new EmptyStackException();
+        }
+        return top.data;
+    }
+
+    public boolean isEmpty() {
+        return top == null;
+    }
+
+    public int size() {
+        return size;
+    }
+}
 ```

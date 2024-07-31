@@ -2,7 +2,7 @@
   "name": "JavaSnippet",
   "displayName": "JavaSnippet - Efficient Java Code Templates",
   "description": "Boost your Java productivity with comprehensive code snippets. This extension provides a rich collection of Java code templates for data structures, algorithms, I/O operations, and modern Java features. Perfect for beginners and experienced developers alike.",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "publisher": "BamaCharanChhandogi",
   "icon": "images/logo.png",
   "repository": {

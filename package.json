@@ -1,8 +1,8 @@
 {
   "name": "JavaSnippet",
-  "displayName": "JavaSnippet",
-  "description": "This is java code snippets",
-  "version": "1.0.8",
+  "displayName": "JavaSnippet - Efficient Java Code Templates",
+  "description": "Boost your Java productivity with comprehensive code snippets. This extension provides a rich collection of Java code templates for data structures, algorithms, I/O operations, and modern Java features. Perfect for beginners and experienced developers alike.",
+  "version": "1.0.9",
   "publisher": "BamaCharanChhandogi",
   "icon": "images/logo.png",
   "repository": {
@@ -12,13 +12,21 @@
   "keywords": [
     "java",
     "snippet",
-    "code"
+    "code",
+    "template",
+    "productivity",
+    "data structures",
+    "algorithms",
+    "input-output",
+    "modern java",
+    "coding shortcuts"
   ],
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Programming Languages"
   ],
   "contributes": {
     "snippets": [
@@ -27,5 +35,28 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
-  }
+  },
+  "tags": [
+    "java development",
+    "code efficiency",
+    "learning tool",
+    "time-saving",
+    "best practices"
+  ],
+  "galleryBanner": {
+    "color": "#0273D4",
+    "theme": "dark"
+  },
+  "badges": [
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/v/BamaCharanChhandogi.JavaSnippet",
+      "href": "https://marketplace.visualstudio.com/items?itemName=BamaCharanChhandogi.JavaSnippet",
+      "description": "VS Marketplace Version"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/d/BamaCharanChhandogi.JavaSnippet",
+      "href": "https://marketplace.visualstudio.com/items?itemName=BamaCharanChhandogi.JavaSnippet",
+      "description": "VS Marketplace Downloads"
+    }
+  ]
 }

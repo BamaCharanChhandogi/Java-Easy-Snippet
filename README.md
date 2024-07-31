@@ -114,6 +114,16 @@ Boost your Java development productivity with the **Java Boilerplate Generator**
 | 83 | userlinkedhashset            | User-defined Linked Hash Set  |
 | 84  | userhashmap            | User-defined Hash Map   |
 | 85  | usertreemap            | User-defined Tree Map   |
+| 86 |  trywithresources       | Try with resources      |
+| 87 |   trycatch               | Try catch exception   |
+| 88 |  trycatchfinally         | Try catch exception   |
+| 89 |  ifelse                  | ifelse  Condition     |
+| 90 |  ifelseif                | ifelseif  Condition   | 
+| 91 |  switch                  | switch                 |
+| 92 |  for                     |  for loop Iteration    |
+| 93 |  foreach                 | foreach Iteration      |
+| 93 |  while                   | while Iteration        |
+| 93 |  dowhile                 | dowhile Iteration      |
 
 <br>
 <!-- ## View Demo Codes  -->
@@ -516,4 +526,82 @@ static class Stack<T> {
         return size;
     }
 }
+```
+### ❇️ trywithresources = Java try-with-resources block
+```java
+try (Scanner scanner = new Scanner(System.in)) {
+    $0
+} catch (Exception e) {
+    System.out.println(e.getMessage());
+}
+```
+### ❇️ trycatch = Java try-catch block
+```java
+try {
+    $0
+} catch (Exception e) {
+    System.out.println(e.getMessage());
+}
+```
+### ❇️ trycatchfinally = Java try-catch-finally block
+```java
+try {
+    $0
+} catch (Exception e) {
+    System.out.println(e.getMessage());
+} finally {
+    System.out.println("Finally block");
+}
+```
+### ❇️ ifelse = Java if-else statement
+```java
+if ($1) {
+    $0
+} else {
+    
+}
+```
+### ❇️ ifelseif = Java if-else-if statement
+```java
+if ($1) {
+    $0
+} else if ($2) {
+    
+} else {
+    
+}
+```
+### ❇️ switch = Java switch statement
+```java
+switch ($1) {
+    case $2:
+        $0
+        break;
+    default:
+        break;
+}
+```
+### ❇️ for = Java for loop
+```java
+for (int i = 0; i < $1; i++) {
+    $0
+}
+```
+### ❇️ foreach = Java for-each loop
+```java
+for ($1 : $2) {
+    $0
+}
+```
+### ❇️ while = Java while loop
+```java
+while ($1) {
+    $0
+}
+```
+### ❇️ dowhile = Java do-while loop
+```java
+do {
+    $0
+} while ($1);
 ```

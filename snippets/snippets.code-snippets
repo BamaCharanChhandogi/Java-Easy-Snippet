@@ -184,7 +184,7 @@
       "$0"
     ],
     "description": "Creates a Java class with a Scanner object for user input String Array"
-  }
+  },
   
   // java Scanner Integer ArrayList
   "Java Scanner Integer ArrayList": {
@@ -247,7 +247,7 @@
     "$0"
   ],
   "description": "Creates a Java class with a Scanner object for user input String LinkedList"
- }
+ },
  
  // Java Scanner Integer Queue
  "Java Scanner Integer Queue": {
@@ -511,7 +511,7 @@
     "$0"
   ],
   "description": "Creates a Java class with a Scanner object for user input String LinkedHashSet"
- }
+ },
   /*----------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------------------*/
@@ -859,7 +859,7 @@
       "$0",
     ],
     "description": "Creates a Java class with a PriorityQueue Integer."
-  }
+  },
   // Java PriorityQueue template for String
   "Java PriorityQueue Template String": {
     "prefix": "jpqueuestr",
@@ -1039,7 +1039,7 @@
         "\tpublic int size() {",
         "\t\treturn size;",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined Stack class in Java."
@@ -1106,7 +1106,7 @@
         "\tpublic int size() {",
         "\t\treturn size;",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined Queue class in Java."
@@ -1149,7 +1149,7 @@
         "\tpublic int size() {",
         "\t\treturn list.size();",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined PriorityQueue class in Java."
@@ -1185,7 +1185,7 @@
         "\tpublic int size() {",
         "\t\treturn map.size();",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined HashSet class in Java."
@@ -1221,7 +1221,7 @@
         "\tpublic int size() {",
         "\t\treturn map.size();",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined TreeSet class in Java."
@@ -1257,7 +1257,7 @@
         "\tpublic int size() {",
         "\t\treturn map.size();",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined LinkedHashSet class in Java."
@@ -1328,7 +1328,7 @@
         "\t\t\tthis.value = value;",
         "\t\t}",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined HashMap class in Java."
@@ -1404,7 +1404,7 @@
         "\t\t\treturn this.key.toString().compareTo(other.key.toString());",
         "\t\t}",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined TreeMap class in Java."
@@ -1445,7 +1445,7 @@
         "\tpublic int size() {",
         "\t\treturn size;",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined ArrayList class in Java."
@@ -1486,7 +1486,7 @@
         "\tpublic int size() {",
         "\t\treturn size;",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined Array class in Java."
@@ -1557,7 +1557,7 @@
         "\tpublic int size() {",
         "\t\treturn size;",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined DoublyLinkedList class in Java."
@@ -1613,9 +1613,132 @@
         "\tpublic int size() {",
         "\t\treturn size;",
         "\t}",
-        "}"
+        "}",
         ""
     ],
     "description": "Creates a user-defined CircularLinkedList class in Java."
+  },
+
+  /*----------------------------------------------------------------------------------------------------*/
+  /*----------------------------------------------------------------------------------------------------*/
+  /*----------------------------------------------------------------------------------------------------*/
+
+  // Java try-with-resources template
+  "Java try-with-resources": {
+    "prefix": "trywithresources",
+    "body": [
+      "try (Scanner scanner = new Scanner(System.in)) {",
+      "\t$0",
+      "} catch (Exception e) {",
+      "\tSystem.out.println(e.getMessage());",
+      "}",
+    ],
+    "description": "Creates a try-with-resources block in Java."
+  },
+  // Java try-catch block template
+  "Java try-catch block": {
+    "prefix": "trycatch",
+    "body": [
+      "try {",
+      "\t$0",
+      "} catch (Exception e) {",
+      "\tSystem.out.println(e.getMessage());",
+      "}",
+    ],
+    "description": "Creates a try-catch block in Java."
+  },
+  // Java try-catch-finally block template
+  "Java try-catch-finally block": {
+    "prefix": "trycatchfinally",
+    "body": [
+      "try {",
+      "\t$0",
+      "} catch (Exception e) {",
+      "\tSystem.out.println(e.getMessage());",
+      "} finally {",
+      "\tSystem.out.println(\"Finally block\");",
+      "}",
+    ],
+    "description": "Creates a try-catch-finally block in Java."
+  },
+  // Java if-else statement template
+  "Java if-else statement": {
+    "prefix": "ifelse",
+    "body": [
+      "if ($1) {",
+      "\t$0",
+      "} else {",
+      "\t",
+      "}",
+    ],
+    "description": "Creates an if-else statement in Java."
+  },
+  // Java if-else-if statement template
+  "Java if-else-if statement": {
+    "prefix": "ifelseif",
+    "body": [
+      "if ($1) {",
+      "\t$0",
+      "} else if ($2) {",
+      "\t",
+      "} else {",
+      "\t",
+      "}",
+    ],
+    "description": "Creates an if-else-if statement in Java."
+  },
+  // Java switch statement template
+  "Java switch statement": {
+    "prefix": "switch",
+    "body": [
+      "switch ($1) {",
+      "\tcase $2:",
+      "\t\t$0",
+      "\t\tbreak;",
+      "\tdefault:",
+      "\t\tbreak;",
+      "}",
+    ],
+    "description": "Creates a switch statement in Java."
+  },
+  // Java for loop template
+  "Java for loop": {
+    "prefix": "for",
+    "body": [
+      "for (int i = 0; i < $1; i++) {",
+      "\t$0",
+      "}",
+    ],
+    "description": "Creates a for loop in Java."
+  },
+  // Java for-each loop template
+  "Java for-each loop": {
+    "prefix": "foreach",
+    "body": [
+      "for ($1 : $2) {",
+      "\t$0",
+      "}",
+    ],
+    "description": "Creates a for-each loop in Java."
+  },
+  // Java while loop template
+  "Java while loop": {
+    "prefix": "while",
+    "body": [
+      "while ($1) {",
+      "\t$0",
+      "}",
+    ],
+    "description": "Creates a while loop in Java."
+  },
+  // Java do-while loop template
+  "Java do-while loop": {
+    "prefix": "dowhile",
+    "body": [
+      "do {",
+      "\t$0",
+      "} while ($1);",
+    ],
+    "description": "Creates a do-while loop in Java."
   }
 }

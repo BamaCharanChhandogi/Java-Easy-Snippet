@@ -345,8 +345,8 @@ System.out.println();
 ```
 ### ❇️ joutarray = Creates a Java output code of Array
 ```java
-for (int i = 0; i < arr.length; i++) {
-    System.out.println(arr[i]);
+for (final var e : arr) {
+    System.out.println(e);
 }
 ```
 ### ❇️ joutarraylist = Creates a Java output code of ArrayList

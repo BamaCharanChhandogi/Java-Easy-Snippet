@@ -528,8 +528,8 @@
   "Java Array Output": {
     "prefix": "joutarray",
     "body": [
-      "for (int i = 0; i < arr.length; i++) {",
-      "    System.out.println(arr[i]);",
+      "for (final var e : arr) {",
+      "    System.out.println(e);",
       "}",
       "$0",
     ],

@@ -351,8 +351,8 @@ for (final var e : arr) {
 ```
 ### ❇️ joutarraylist = Creates a Java output code of ArrayList
 ```java
-for (int i = 0; i < list.size(); i++) {
-    System.out.println(list.get(i));
+for (final var e : list) {
+    System.out.println(e);
 }
 ```
 ### ❇️ jouthashmap = Creates a Java output code of Hash Map

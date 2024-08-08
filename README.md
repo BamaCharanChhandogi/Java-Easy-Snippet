@@ -363,8 +363,8 @@ for (Map.Entry<String, Integer> entry : map.entrySet()) {
 ```
 ### ❇️ joutlinkedlist = Creates a Java output code of LinkedList
 ```java
-for (int i = 0; i < list.size(); i++) {
-    System.out.println(list.get(i));
+for (final var e : list) {
+    System.out.println(e);
 }
 ```
 ```<!---------------------------------------------------------------------------------> ```

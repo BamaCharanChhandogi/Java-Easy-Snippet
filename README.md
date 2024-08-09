@@ -4,7 +4,7 @@
 
 Boost your Java development productivity with the **Java Boilerplate Generator** extension for Visual Studio Code. Say goodbye to repetitive code setup and hello to streamlined project initialization. This extension provides essential Java boilerplate code snippets and templates, helping you kickstart your projects swiftly and efficiently.
 
-## Downloaded: 200+
+## Downloaded: 300+
 
 ## How to Use
 

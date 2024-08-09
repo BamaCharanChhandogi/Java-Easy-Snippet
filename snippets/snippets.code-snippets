@@ -528,8 +528,8 @@
   "Java Array Output": {
     "prefix": "joutarray",
     "body": [
-      "for (int i = 0; i < arr.length; i++) {",
-      "    System.out.println(arr[i]);",
+      "for (final var element : arr) {",
+      "    System.out.println(element);",
       "}",
       "$0",
     ],
@@ -540,8 +540,8 @@
   "Java ArrayList Output": {
     "prefix": "joutarraylist",
     "body": [
-      "for (int i = 0; i < list.size(); i++) {",
-      "    System.out.println(list.get(i));",
+      "for (final var element : list) {",
+      "    System.out.println(element);",
       "}",
       "$0",
     ],
@@ -562,8 +562,8 @@
   "Java LinkedList Output": {
     "prefix": "joutlinkedlist",
     "body": [
-      "for (int i = 0; i < list.size(); i++) {",
-      "    System.out.println(list.get(i));",
+      "for (final var element : list) {",
+      "    System.out.println(element);",
       "}",
       "$0",
     ],

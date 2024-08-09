@@ -345,14 +345,14 @@ System.out.println();
 ```
 ### ❇️ joutarray = Creates a Java output code of Array
 ```java
-for (int i = 0; i < arr.length; i++) {
-    System.out.println(arr[i]);
+for (final var element : arr) {
+    System.out.println(element);
 }
 ```
 ### ❇️ joutarraylist = Creates a Java output code of ArrayList
 ```java
-for (int i = 0; i < list.size(); i++) {
-    System.out.println(list.get(i));
+for (final var element : list) {
+    System.out.println(element);
 }
 ```
 ### ❇️ jouthashmap = Creates a Java output code of Hash Map
@@ -363,8 +363,8 @@ for (Map.Entry<String, Integer> entry : map.entrySet()) {
 ```
 ### ❇️ joutlinkedlist = Creates a Java output code of LinkedList
 ```java
-for (int i = 0; i < list.size(); i++) {
-    System.out.println(list.get(i));
+for (final var element : list) {
+    System.out.println(element);
 }
 ```
 ```<!---------------------------------------------------------------------------------> ```

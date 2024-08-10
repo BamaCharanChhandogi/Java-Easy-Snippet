@@ -215,7 +215,7 @@ for (int i = 0; i <arr.length; i++) {
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
 
-ArrayList<Integer> list = new ArrayList<>();
+List<Integer> list = new ArrayList<>();
 for (int i = 0; i < n; i++) {
     list.add(scanner.nextInt());
 }
@@ -236,7 +236,7 @@ for (int i = 0; i < n; i++) {
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
 
-LinkedList<Integer> list = new LinkedList<>();
+List<Integer> list = new LinkedList<>();
 for (int i = 0; i < n; i++) {
     list.add(scanner.nextInt());
 }
@@ -371,15 +371,15 @@ for (final var element : list) {
 
 ### ❇️ jarraylist = Java Class with ArrayList
 ```java
-ArrayList<Integer> list = new ArrayList<>();
+List<Integer> list = new ArrayList<>();
 ```
 ### ❇️ jhashmap = Java Class with HashMap
 ```java
-HashMap<String, Integer> map = new HashMap<>();
+Map<String, Integer> map = new HashMap<>();
 ```
 ### ❇️ jlinkedlist = Java Class with LinkedList
 ```java
-LinkedList<Integer> list = new LinkedList<>();
+List<Integer> list = new LinkedList<>();
 ```
 ### ❇️ jqueue = Java Class with Queue
 ```java

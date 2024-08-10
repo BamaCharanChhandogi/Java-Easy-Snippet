@@ -551,7 +551,7 @@
   "Java HashMap Output": {
     "prefix": "jouthashmap",
     "body": [
-      "for (Map.Entry<String, Integer> entry : map.entrySet()) {",
+      "for (final var entry : map.entrySet()) {",
       "    System.out.println(entry.getKey() + \" \" + entry.getValue());",
       "}",
       "$0",
@@ -608,7 +608,7 @@
   "Java TreeMap Output": {
     "prefix": "jouttreemap",
     "body": [
-      "for (Map.Entry<String, Integer> entry : map.entrySet()) {",
+      "for (final var entry : map.entrySet()) {",
       "    System.out.println(entry.getKey() + \" \" + entry.getValue());",
       "}",
       "$0",

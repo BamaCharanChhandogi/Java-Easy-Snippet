@@ -357,7 +357,7 @@ for (final var element : list) {
 ```
 ### ❇️ jouthashmap = Creates a Java output code of Hash Map
 ```java
-for (Map.Entry<String, Integer> entry : map.entrySet()) {
+for (final var entry : map.entrySet()) {
     System.out.println(entry.getKey() + entry.getValue());
 }
 ```

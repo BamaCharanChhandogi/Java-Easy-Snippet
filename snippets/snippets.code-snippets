@@ -42,7 +42,7 @@
   "Java Scanner Template": {
     "prefix": "jscan",
     "body": [
-      "Scanner scanner = new Scanner(System.in);",
+      "Scanner sc = new Scanner(System.in);",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input."
@@ -51,7 +51,7 @@
   "Java Scanner Integer": {
     "prefix": "jscanint",
     "body": [
-      "int ${1:variable} = scanner.nextInt();",
+      "int ${1:variable} = sc.nextInt();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Integer."
@@ -60,7 +60,7 @@
   "Java Scanner String": {
     "prefix": "jscanstr",
     "body": [
-      "String ${1:variable} = scanner.nextLine();",
+      "String ${1:variable} = sc.nextLine();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input String."
@@ -69,7 +69,7 @@
   "Java Scanner Double": {
     "prefix": "jscandouble",
     "body": [
-      "double ${1:variable} = scanner.nextDouble();",
+      "double ${1:variable} = sc.nextDouble();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Double."
@@ -78,7 +78,7 @@
   "Java Scanner Long": {
     "prefix": "jscanlong",
     "body": [
-      "long ${1:variable} = scanner.nextLong();",
+      "long ${1:variable} = sc.nextLong();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Long."
@@ -87,7 +87,7 @@
   "Java Scanner Float": {
     "prefix": "jscanfloat",
     "body": [
-      "float ${1:variable} = scanner.nextFloat();",
+      "float ${1:variable} = sc.nextFloat();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Float."
@@ -96,7 +96,7 @@
   "Java Scanner Boolean": {
     "prefix": "jscanbool",
     "body": [
-      "boolean ${1:variable} = scanner.nextBoolean();",
+      "boolean ${1:variable} = sc.nextBoolean();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Boolean."
@@ -105,7 +105,7 @@
   "Java Scanner Byte": {
     "prefix": "jscanbyte",
     "body": [
-      "byte ${1:variable} = scanner.nextByte();",
+      "byte ${1:variable} = sc.nextByte();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Byte."
@@ -114,7 +114,7 @@
   "Java Scanner Short": {
     "prefix": "jscanshort",
     "body": [
-      "short ${1:variable} = scanner.nextShort();",
+      "short ${1:variable} = sc.nextShort();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Short."
@@ -123,7 +123,7 @@
   "Java Scanner Char": {
     "prefix": "jscanchr",
     "body": [
-      "char ${1:variable} = scanner.next().charAt(0);",
+      "char ${1:variable} = sc.next().charAt(0);",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input Char."
@@ -132,7 +132,7 @@
   "Java Scanner BigInteger": {
     "prefix": "jscanbiginteger",
     "body": [
-      "BigInteger ${1:variable} = scanner.nextBigInteger();",
+      "BigInteger ${1:variable} = sc.nextBigInteger();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input BigInteger."
@@ -141,7 +141,7 @@
   "Java Scanner BigDecimal": {
     "prefix": "jscanbigdecimal",
     "body": [
-      "BigDecimal ${1:variable} = scanner.nextBigDecimal();",
+      "BigDecimal ${1:variable} = sc.nextBigDecimal();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input BigDecimal."
@@ -150,7 +150,7 @@
   "Java Scanner nextLine": {
     "prefix": "jscannextline",
     "body": [
-      "scanner.nextLine();",
+      "sc.nextLine();",
       "$0",
     ],
     "description": "Creates a Java class with a Scanner object for user input nextLine."
@@ -159,11 +159,11 @@
   "Java Scanner Integer Array using for loop": {
     "prefix": "jscanintarray",
     "body": [
-      "Scanner scanner = new Scanner(System.in);",
-      "int[] ${1:arr} = new int[scanner.nextInt()];",
+      "Scanner sc = new Scanner(System.in);",
+      "int[] ${1:arr} = new int[sc.nextInt()];",
       "",
       "for (int i = 0; i < ${1:arr}.length; i++) {",
-      "    ${1:arr}[i] = scanner.nextInt();",
+      "    ${1:arr}[i] = sc.nextInt();",
       "}",
       "$0",
     ],
@@ -173,13 +173,13 @@
   "Java Scanner String Array": {
     "prefix": "jscanstrarray",
     "body": [
-      "Scanner scanner = new Scanner(System.in);",
-      "int n = scanner.nextInt();",
-      "scanner.nextLine(); // Consume the newline character",
+      "Scanner sc = new Scanner(System.in);",
+      "int n = sc.nextInt();",
+      "sc.nextLine(); // Consume the newline character",
       "",
       "String[] ${1:arr} = new String[n];",
       "for (int i = 0; i < ${1:arr}.length; i++) {",
-      "    ${1:arr}[i] = scanner.nextLine();",
+      "    ${1:arr}[i] = sc.nextLine();",
       "}",
       "$0"
     ],
@@ -190,12 +190,12 @@
   "Java Scanner Integer ArrayList": {
     "prefix": "jscanintarraylist",
     "body": [
-      "Scanner scanner = new Scanner(System.in);",
-      "int n = scanner.nextInt();",
+      "Scanner sc = new Scanner(System.in);",
+      "int n = sc.nextInt();",
       "",
       "ArrayList<Integer> ${1:list} = new ArrayList<>();",
       "for (int i = 0; i < n; i++) {",
-      "    ${1:list}.add(scanner.nextInt());",
+      "    ${1:list}.add(sc.nextInt());",
       "}",
       "$0",
     ],
@@ -205,13 +205,13 @@
   "Java Scanner String ArrayList": {
     "prefix": "jscanstrarraylist",
     "body": [
-      "Scanner scanner = new Scanner(System.in);",
-      "int n = scanner.nextInt();",
-      "scanner.nextLine(); // Consume the newline character",
+      "Scanner sc = new Scanner(System.in);",
+      "int n = sc.nextInt();",
+      "sc.nextLine(); // Consume the newline character",
       "",
       "ArrayList<String> ${1:list} = new ArrayList<>();",
       "for (int i = 0; i < n; i++) {",
-      "    ${1:list}.add(scanner.nextLine());",
+      "    ${1:list}.add(sc.nextLine());",
       "}",
       "$0",
     ],
@@ -221,12 +221,12 @@
   "Java Scanner Integer LinkedList": {
   "prefix": "jscanintlinkedlist",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "LinkedList<Integer> ${1:list} = new LinkedList<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:list}.add(scanner.nextInt());",
+    "    ${1:list}.add(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -236,13 +236,13 @@
  "Java Scanner String LinkedList": {
   "prefix": "jscanstrlinkedlist",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "LinkedList<String> ${1:list} = new LinkedList<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:list}.add(scanner.nextLine());",
+    "    ${1:list}.add(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -253,12 +253,12 @@
  "Java Scanner Integer Queue": {
   "prefix": "jscanintqueue",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "Queue<Integer> ${1:queue} = new LinkedList<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:queue}.offer(scanner.nextInt());",
+    "    ${1:queue}.offer(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -269,13 +269,13 @@
  "Java Scanner String Queue": {
   "prefix": "jscanstrqueue",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "Queue<String> ${1:queue} = new LinkedList<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:queue}.offer(scanner.nextLine());",
+    "    ${1:queue}.offer(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -286,12 +286,12 @@
  "Java Scanner Integer Stack": {
   "prefix": "jscanintstack",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "Stack<Integer> ${1:stack} = new Stack<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:stack}.push(scanner.nextInt());",
+    "    ${1:stack}.push(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -302,13 +302,13 @@
  "Java Scanner String Stack": {
   "prefix": "jscanstrstack",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "Stack<String> ${1:stack} = new Stack<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:stack}.push(scanner.nextLine());",
+    "    ${1:stack}.push(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -319,12 +319,12 @@
  "Java Scanner Integer Set": {
   "prefix": "jscanintset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "Set<Integer> ${1:set} = new HashSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextInt());",
+    "    ${1:set}.add(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -335,13 +335,13 @@
  "Java Scanner String Set": {
   "prefix": "jscanstrset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "Set<String> ${1:set} = new HashSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextLine());",
+    "    ${1:set}.add(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -352,12 +352,12 @@
  "Java Scanner Integer TreeMap": {
   "prefix": "jscaninttreemap",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "Map<Integer, Integer> ${1:map} = new TreeMap<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:map}.put(scanner.nextInt(), scanner.nextInt());",
+    "    ${1:map}.put(sc.nextInt(), sc.nextInt());",
     "}",
     "$0"
   ],
@@ -368,13 +368,13 @@
  "Java Scanner String TreeMap": {
   "prefix": "jscanstrtreemap",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "Map<String, Integer> ${1:map} = new TreeMap<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:map}.put(scanner.nextLine(), scanner.nextInt());",
+    "    ${1:map}.put(sc.nextLine(), sc.nextInt());",
     "}",
     "$0"
   ],
@@ -385,12 +385,12 @@
  "Java Scanner Integer PriorityQueue": {
   "prefix": "jscanintpriorityqueue",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "PriorityQueue<Integer> ${1:pqueue} = new PriorityQueue<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:pqueue}.offer(scanner.nextInt());",
+    "    ${1:pqueue}.offer(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -401,13 +401,13 @@
  "Java Scanner String PriorityQueue": {
   "prefix": "jscanstrpriorityqueue",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "PriorityQueue<String> ${1:pqueue} = new PriorityQueue<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:pqueue}.offer(scanner.nextLine());",
+    "    ${1:pqueue}.offer(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -418,12 +418,12 @@
  "Java Scanner Integer HashSet": {
   "prefix": "jscaninthashset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "Set<Integer> ${1:set} = new HashSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextInt());",
+    "    ${1:set}.add(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -434,13 +434,13 @@
  "Java Scanner String HashSet": {
   "prefix": "jscanstrhashset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "Set<String> ${1:set} = new HashSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextLine());",
+    "    ${1:set}.add(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -451,12 +451,12 @@
  "Java Scanner Integer TreeSet": {
   "prefix": "jscaninttreeset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "Set<Integer> ${1:set} = new TreeSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextInt());",
+    "    ${1:set}.add(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -467,13 +467,13 @@
  "Java Scanner String TreeSet": {
   "prefix": "jscanstrtreeset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "Set<String> ${1:set} = new TreeSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextLine());",
+    "    ${1:set}.add(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -484,12 +484,12 @@
  "Java Scanner Integer LinkedHashSet": {
   "prefix": "jscanintlinkedhashset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
     "",
     "Set<Integer> ${1:set} = new LinkedHashSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextInt());",
+    "    ${1:set}.add(sc.nextInt());",
     "}",
     "$0"
   ],
@@ -500,13 +500,13 @@
  "Java Scanner String LinkedHashSet": {
   "prefix": "jscanstrlinkedhashset",
   "body": [
-    "Scanner scanner = new Scanner(System.in);",
-    "int n = scanner.nextInt();",
-    "scanner.nextLine(); // Consume the newline character",
+    "Scanner sc = new Scanner(System.in);",
+    "int n = sc.nextInt();",
+    "sc.nextLine(); // Consume the newline character",
     "",
     "Set<String> ${1:set} = new LinkedHashSet<>();",
     "for (int i = 0; i < n; i++) {",
-    "    ${1:set}.add(scanner.nextLine());",
+    "    ${1:set}.add(sc.nextLine());",
     "}",
     "$0"
   ],
@@ -516,13 +516,21 @@
   /*----------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------------------*/
 
-  // Java Output template
+  // Java Output template Println
   "Java Output Template": {
     "prefix": "jout",
     "body": [
       "System.out.println($0);",
     ],
     "description": "Creates a Java output code"
+  },
+  // Java Output template Printf
+  "Java printf Template": {
+    "prefix": "jprintf",
+    "body": [
+      "System.out.printf($0);",
+    ],
+    "description": "Creates a Java printf code"
   },
  // Output Array 
   "Java Array Output": {
@@ -1627,7 +1635,7 @@
   "Java try-with-resources": {
     "prefix": "trywithresources",
     "body": [
-      "try (Scanner scanner = new Scanner(System.in)) {",
+      "try (Scanner sc = new Scanner(System.in)) {",
       "\t$0",
       "} catch (Exception e) {",
       "\tSystem.out.println(e.getMessage());",
@@ -1733,6 +1741,15 @@
   },
   // Java do-while loop template
   "Java do-while loop": {
+    "prefix": "dowhile",
+    "body": [
+      "do {",
+      "\t$0",
+      "} while ($1);",
+    ],
+    "description": "Creates a do-while loop in Java."
+  },
+  "Java do-while-bama loop": {
     "prefix": "dowhile",
     "body": [
       "do {",

@@ -4,7 +4,7 @@
 
 Boost your Java development productivity with the **Java Boilerplate Generator** extension for Visual Studio Code. Say goodbye to repetitive code setup and hello to streamlined project initialization. This extension provides essential Java boilerplate code snippets and templates, helping you kickstart your projects swiftly and efficiently.
 
-## Downloaded: 300+
+## Downloaded: 500+
 
 ## How to Use
 
@@ -124,6 +124,7 @@ Boost your Java development productivity with the **Java Boilerplate Generator**
 | 93 |  foreach                 | foreach Iteration      |
 | 93 |  while                   | while Iteration        |
 | 93 |  dowhile                 | dowhile Iteration      |
+| 94 | jprintf                  | Creates a Java printf code |
 
 <br>
 <!-- ## View Demo Codes  -->
@@ -156,7 +157,7 @@ public class Main {
 
 ### ❇️ jscan = Java Class with Scanner
 ```java
-Scanner scanner = new Scanner(System.in);
+Scanner sc = new Scanner(System.in);
 ```
 <!-- Input section -->
 ### ❇️ jscanint = Creates a Java class with a Scanner object for user input Integer
@@ -192,22 +193,22 @@ scanner.nextLine();
 ```
 ## ❇️ jscanintarray = Creates a Java class with a Scanner object for user input Integer Array.
 ```java
-Scanner scanner = new Scanner(System.in);
-int[] arr = new int[scanner.nextInt()];
+Scanner sc = new Scanner(System.in);
+int[] arr = new int[sc.nextInt()];
 
 for (int i = 0; i < arr.length; i++) {
-    arr[i] = scanner.nextInt();
+    arr[i] = sc.nextInt();
 }
 ```
 ### ❇️ jscanstrarray = Creates a Java class with a Scanner object for user input String Array
 ```java
-Scanner scanner = new Scanner(System.in);
-int n = scanner.nextInt();
-scanner.nextLine(); // Consume the newline character
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+sc.nextLine(); // Consume the newline character
 
 String[] arr = new String[n];
 for (int i = 0; i <arr.length; i++) {
-    arr[i] = scanner.nextLine();
+    arr[i] = sc.nextLine();
 }
 ```
 ### ❇️ jscanintarraylist = Creates a Java class with a Scan scanner object for user input Integer Array list
@@ -342,6 +343,10 @@ for (int i = 0; i < n; i++) {
 ### ❇️ jout = Creates a Java output code
 ```java
 System.out.println();
+```
+### ❇️ jprintf = Creates a Java printf code
+```java
+System.out.printf();
 ```
 ### ❇️ joutarray = Creates a Java output code of Array
 ```java

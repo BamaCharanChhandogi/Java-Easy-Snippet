@@ -240,7 +240,7 @@
     "int n = sc.nextInt();",
     "sc.nextLine(); // Consume the newline character",
     "",
-    "LinkedList<String> ${1:list} = new LinkedList<>();",
+    "List<String> ${1:list} = new LinkedList<>();",
     "for (int i = 0; i < n; i++) {",
     "    ${1:list}.add(sc.nextLine());",
     "}",
@@ -677,7 +677,7 @@
  "Java ArrayList Template Integer": {
   "prefix": "jarraylistint",
   "body": [
-    "ArrayList<Integer> list = new ArrayList<>();",
+    "List<Integer> list = new ArrayList<>();",
     "$0",
   ],
   "description": "Creates a Java class with an ArrayList Integer."
@@ -695,7 +695,7 @@
   "Java HashMap Template Integer": {
     "prefix": "jhashmapint",
     "body": [
-      "HashMap<Integer, Integer> map = new HashMap<>();",
+      "Map<Integer, Integer> map = new HashMap<>();",
       "$0"
     ],
     "description": "Creates a Java class with a HashMap."
@@ -704,7 +704,7 @@
   "Java HashMap Template String": {
     "prefix": "jhashmapstr",
     "body": [
-      "HashMap<String, String> map = new HashMap<>();",
+      "Map<String, String> map = new HashMap<>();",
       "$0"
     ],
     "description": "Creates a Java class with a HashMap."
@@ -714,7 +714,7 @@
   "Java LinkedList Template Integer": {
     "prefix": "jlinkedlistint",
     "body": [
-      "LinkedList<Integer> list = new LinkedList<>();",
+      "List<Integer> list = new LinkedList<>();",
       "$0",
     ],
     "description": "Creates a Java class with a LinkedList Integer."
@@ -723,7 +723,7 @@
   "Java LinkedList Template String": {
     "prefix": "jlinkedliststr",
     "body": [
-      "LinkedList<String> list = new LinkedList<>();",
+      "List<String> list = new LinkedList<>();",
       "$0",
     ],
     "description": "Creates a Java class with a LinkedList String."
@@ -844,7 +844,7 @@
   "Java TreeMap Template Integer": {
     "prefix": "jtreemapint",
     "body": [
-      "TreeMap<Integer, Integer> map = new TreeMap<>();",
+      "Map<Integer, Integer> map = new TreeMap<>();",
       "$0",
     ],
     "description": "Creates a Java class with a TreeMap Integer."
@@ -853,7 +853,7 @@
   "Java TreeMap Template String": {
     "prefix": "jtreemapstr",
     "body": [
-      "TreeMap<String, String> map = new TreeMap<>();",
+      "Map<String, String> map = new TreeMap<>();",
       "$0",
     ],
     "description": "Creates a Java class with a TreeMap String."
